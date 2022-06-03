@@ -1,3 +1,8 @@
+// *{
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
 @import "./variables";
 @import "./helpers";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
@@ -11,6 +16,7 @@
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
+  width: 90rem;
 }
 
 // heading
@@ -135,6 +141,161 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+.ogoni {
+  display: flex;
+  justify-content: space-evenly;
+
+
+  .video {
+    width: 36.375rem;
+    height: 41.5rem;
+
+    video {
+      width: 100%;
+    }
+  }
+
+  .ogoni-right {
+    position: relative;
+    left: 5%;
+
+    &-heading {
+      width: 40.0625rem;
+      font-weight: bold;
+      font-size: 3rem;
+    }
+
+    &-info {
+      width: 35.75rem;
+      font-size: 1.125rem;
+
+      button {
+        margin-top: 3.0625rem;
+      }
+    }
+  }
+}
+
+.fast{
+  position: relative;
+  background-color: $primary;
+  width: 100%;
+  height: 50.5625rem;
+
+  &-header {
+    width: 21.875rem;
+    height: 4.8125rem;
+    margin-bottom: 4rem;
+    padding-top: 3.5rem;
+  }
+
+  &-img {
+    display: flex;
+
+    .fast_img {
+      height: 26.5rem;
+      background-color: #F4F4F4;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      justify-content: space-between;
+      margin-inline: 0.25rem;
+
+      .img {
+        img {
+          width: 17.25rem;
+        }
+      }
+
+      .fast-img-caption {
+        display: flex;
+
+
+        .caption {
+          font-weight: 500;
+          color: $primary;
+          font-size: 1.125rem;
+        }
+
+        .date {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #5E5E5E;
+          text-align: center;
+          justify-content: center;
+        }
+      }
+
+      .fast-txt {
+        width: 17.125rem;
+        font-size: 0.9375rem;
+        line-height: 1.1344375rem;
+        height: 5.375rem;
+
+        .fast-foot {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: 0rem;
+          text-align: left;
+          color: $primary;
+
+        }
+      }
+
+    }
+
+  }
+
+
+  .case {
+    position: absolute;
+    left: 43.9%;
+    margin-top: 3.9375rem;
+  }
+}
+
+.view {
+  width: 100%;
+  margin-bottom: 9.5rem;
+
+  .view-header {
+    width: 44.0625rem;
+
+    p {
+      width: 100%;
+      font-weight: bold;
+      font-size: 3rem;
+    }
+  }
+
+  &-img,
+  &-img2 {
+    display: flex;
+
+    img {
+      width: 19.8125rem;
+      height: 16.0625rem;
+    }
+  }
+}
+
+footer {
+  background-color: $primary;
+  height: 5.75rem;
+
+  .footer {
+    color: #ffff;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 2.6875rem;
+
+    span {
+      font-weight: 900;
     }
   }
 }
